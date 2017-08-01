@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.vis.poc_eppo">
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -16,7 +17,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".weather_request" />
         <activity android:name=".eppo_request" />
+        <activity android:name=".gitHub_request" />
+        <activity android:name=".mixmate_request" />
+        <activity android:name=".github_entry" />
+
     </application>
 
 </manifest>

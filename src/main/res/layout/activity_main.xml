@@ -25,43 +25,53 @@
         android:onClick="onClickNewEPPO"
         android:text="New EPPO Request"
         android:textColorLink="@android:color/darker_gray"
-        app:layout_constraintBottom_toTopOf="@+id/CManagePlan"
+        app:layout_constraintBottom_toTopOf="@+id/CWeather"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
 
     <Button
-        android:id="@+id/CManagePlan"
+        android:id="@+id/CWeather"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_marginBottom="9dp"
-        android:onClick="onClickManage"
-        android:text=""
-        app:layout_constraintBottom_toTopOf="@+id/CReport"
-        app:layout_constraintHorizontal_bias="0.501"
+        android:onClick="onClickNewWeather"
+        android:text="New Weater Request"
+        app:layout_constraintBottom_toTopOf="@+id/CGitHub"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
 
     <Button
-        android:id="@+id/CReport"
+        android:id="@+id/CGitHub"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:onClick="onClickReport"
-        android:text=""
+        android:layout_marginBottom="60dp"
+        android:onClick="onClickNewGitHub"
+        android:text="New GitHub Request"
         android:textColorLink="@color/colorPrimaryDark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
-
+    <Button
+        android:id="@+id/CMixMate"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:onClick="onClickNewMixMate"
+        android:text="New MixMate Request"
+        android:textColorLink="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
     <TextView
         android:id="@+id/G"
         style="@android:style/Widget.DeviceDefault.Light.TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif"
-        android:text="EPPO Rest API POC"
+        android:text="Rest API POC"
         android:textSize = "20sp"
         android:textColorLink="@color/colorAccent"
         android:layout_marginLeft="8dp"
@@ -70,7 +80,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/CNewPlan" />
+        />
 
 
 
