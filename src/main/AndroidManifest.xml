@@ -19,6 +19,7 @@
         </activity>
         <activity android:name=".weather_request" />
         <activity android:name=".eppo_request" />
+        <activity android:name=".eppo_POSTrequest" />
         <activity android:name=".gitHub_request" />
         <activity android:name=".mixmate_request" />
         <activity android:name=".github_entry" />
